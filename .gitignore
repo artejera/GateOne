@@ -2,3 +2,13 @@
 *.kate-swp
 .DS_Store
 .directory
+
+/build/
+/conf.d/
+/gateone.egg-info/
+/logs/
+/sessions/
+/users/
+/cache/
+/gateone.pid
+

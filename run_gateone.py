@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 """
 This script is meant for users that wish to run Gate One out of this (GateOne)
@@ -28,6 +28,13 @@ if not os.path.isdir(egg_info_dir):
         print(
             "Error: Could not create %s.  Permissions problem?" % egg_info_dir)
         sys.exit(2)
+
+print
+print ('*** SCRIPT:   : %s' % os.path.abspath(__file__))
+print ('*** CWD       : %s' % os.getcwd())
+print ('*** PATH:     : %s' % (os.environ.get ('PATH')))
+print ('*** PYTHONPATH: ' + ':'.join(sys.path))
+print
 
 from gateone.core.server import main
 
